@@ -1,46 +1,30 @@
-body{
-    margin:0px
+p {
+  text-align: center;
+  font-size: 30px;
 }
-
-
-ul{
-    list-style-type: none;
-    background-color: #333;
-    margin:0px;
-    padding:0px;
-    overflow:hidden;
-    position:fixed;
-    top:0px;
-    width:100vw;
-   
+button {
+  margin-left: 2px;
+  padding: 5px 5px;
+  border-radius: 2px;
+  background-color: hsl(210, 100%, 50%);
+  border: none;
 }
-li{
-    float:left;
-    border-right:1px solid #bbb;
+button:hover {
+  background-color: hsl(210, 100%, 70%);
 }
-li a{
-    display:block;
-    text-decoration:none;
-    padding:20px 16px;
-    color:white;
-    text-align:center;
+button:active {
+  background-color: hsl(210, 100%, 30%);
 }
-.active{
-    background-color: green;
+input {
+  width: 150px;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
 }
-
-li a:hover:not(.active){
-    background-color:#111;;
-
+div {
+  margin: 5px;
 }
-li:last-child{
-    border-right:none;
+div img {
+  width: 150px;
+  margin-left: 5px;
 }
-
-
-
-
-
-
-   
-
