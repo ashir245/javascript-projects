@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        text-align: center;
+        font-size: 30px;
+      }
+      button {
+        margin-left: 2px;
+        padding: 5px 5px;
+        border-radius: 2px;
+        background-color: hsl(210, 100%, 50%);
+        border: none;
+      }
+      button:hover {
+        background-color: hsl(210, 100%, 70%);
+      }
+      button:active {
+        background-color: hsl(210, 100%, 30%);
+      }
+      input {
+        width: 150px;
+        font-size: 1rem;
+        text-align: center;
+        font-weight: bold;
+      }
+      div {
+        margin: 5px;
+      }
+      div img {
+        width: 150px;
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>DICE ROLLER</p>
+    <label for="no"># of Dice:</label>
+    <input type="number" id="no" min="1" value="1" />
+    <button onclick="rollDice()">Roll dice</button>
+    <div id="idresults"></div>
+    <div id="imgresults"></div>
+  </body>
+</html>
+<script src="hello.js"></script>
