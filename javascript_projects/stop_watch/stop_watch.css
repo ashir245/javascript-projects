@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url("images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  background-position: center;
+  overflow: hidden;
+}
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 42px;
+  font-family: monospace;
+
+  background-image: linear-gradient(to right, yellow 30%, blue 40%, green 30%);
+  background-clip: text;
+  color: transparent;
+}
+.stopwatch {
+  background-color: black;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: -8px -8px 5px rgba(209, 188, 188, 0.83),
+    8px 8px 5px hsla(218, 33%, 38%, 0.682);
+}
+.buttons {
+  margin: 10px;
+  cursor: pointer;
+}
+.buttons img:nth-child(2) {
+  height: 150px;
+  padding: 10px;
+}
+.active {
+  background-color: hsl(0, 100%, 90%);
+  border-radius: 50%;
+  transform: scale(0.3);
+  animation: btn 0.5s linear;
+}
+@keyframes btn {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+P {
+  font-size: 40px;
+  color: cyan;
+  font-weight: bold;
+  font-family: monospace;
+}
