@@ -17,7 +17,7 @@ btn.addEventListener("click", () => {
 
       // Iterate through the meanings array and assign the part of speech to the appropriate variable
       data[0].meanings.forEach((meaning) => {
-        if (meaning.partOfSpeech === "noun") {
+        if (meaning.partOfSpeech === "noun" && !noun) {
           noun = meaning.partOfSpeech;
         } else if (meaning.partOfSpeech === "verb" && !verb) {
           verb = meaning.partOfSpeech;
