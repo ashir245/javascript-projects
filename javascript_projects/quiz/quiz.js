@@ -65,7 +65,7 @@ nextBtn.onclick = () => {
     showresultBox();
   }
 };
-const optionList = document.querySelector(".option-list");
+
 //getting quest and options from array
 function showQuestions(index) {
   const questionText = document.querySelector(".question-text");
@@ -80,6 +80,8 @@ function showQuestions(index) {
     option[i].setAttribute("onclick", "optionselected(this)");
   }
 }
+
+const optionList = document.querySelector(".option-list");
 
 function optionselected(answer) {
   let useranswer = answer.textContent;
